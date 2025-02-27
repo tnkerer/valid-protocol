@@ -16,7 +16,7 @@ const Navbar = ({ activeSection = '' }: NavbarProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const threshold = window.innerHeight / 2;
+      const threshold = window.innerHeight / 1.5;
       if (window.scrollY > threshold) {
         setVisible(false);
       } else {

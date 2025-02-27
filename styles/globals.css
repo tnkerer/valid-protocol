@@ -28,14 +28,19 @@
   to { transform: translateX(-100%); }
 }
 
-.animate-marquee {
-  animation: marquee 25s linear infinite;
+@media (max-width: 700px) {
+  /* Hide the background image for devices below 700px */
+  .hide-contact-bg {
+    display: none;
+  }
+
+  /* Remove max-width limitation and rounding for the container */
+  .contact-container {
+    max-width: 100% !important;
+    border-radius: 0 !important;
+  }
 }
 
-.animate-marquee2 {
-  animation: marquee 25s linear infinite;
-  animation-delay: 12.5s;
-}
 
 body {
   font-family: 'Manrope', sans-serif;

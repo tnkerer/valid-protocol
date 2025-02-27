@@ -37,7 +37,6 @@ const Home = () => {
         className="fixed inset-0 -z-10 bg-no-repeat bg-left-top"
         style={{
           backgroundImage: 'url("/assets/bg-gradient.png")',
-          // The key: match the width to the viewport and preserve aspect ratio
           backgroundSize: '100% auto',
         }}
       />

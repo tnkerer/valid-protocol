@@ -45,43 +45,54 @@ const FAQSection = () => {
   return (
     <section id="faq" className="py-24 bg-transparent">
       <div className="container mx-auto">
-        {/* Header area: centered container with left-aligned text */}
+        {/* Header area */}
         <div className="max-w-4xl mx-auto px-6 text-left mb-12">
-          <p className="text-sm uppercase text-blue-500 tracking-wider mb-2">FAQ</p>
+          <p className="text-sm uppercase text-blue-500 tracking-wider mb-2">
+            FAQ
+          </p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Common Questions
           </h2>
           <p className="text-gray-600">
-            Find clear, detailed, and helpful answers to the most frequently asked
-            questions about our platform. Everything you need to know, explained simply.
+            Find clear, detailed, and helpful answers to the most frequently
+            asked questions about our platform. Everything you need to know,
+            explained simply.
           </p>
         </div>
 
-        {/* FAQ cards container: centered and with the same padding */}
+        {/* FAQ cards container */}
         <div className="max-w-4xl mx-auto px-6 space-y-4">
           <FAQItem
-            question="What is XDC Network and how does it work?"
-            answer="XDC Network is a hybrid blockchain designed for enterprise-grade use, combining public and private blockchain features. It offers high-speed transactions, low fees, and smart contract capabilities—ideal for trade finance and decentralized applications (dApps)."
+            question="What is the advantage of staking on Valid versus staking privately?"
+            answer="Staking on Valid Protocol offers several advantages over private staking. By using Valid, you gain access to liquidity through liquid staking tokens (LST), allowing you to easily swap or trade your staked assets at any time. Additionally, Valid handles the technical aspects, such as node hosting, updates, and protocol maintenance, so you don’t need to worry about running or managing your own node."
           />
           <FAQItem
-            question="How can I stake XDC and earn rewards?"
-            answer="By staking XDC, you can earn rewards while contributing to network security. The process is simple and efficient—connect your wallet, select the amount, and start earning."
+            question="What is stXDC?"
+            answer="stXDC is a rebasing liquid staking token (LST) that represents a user’s share of the total XDC staked via the Valid Protocol."
           />
           <FAQItem
-            question="What is stXDC and how does it benefit me?"
-            answer="stXDC is a liquid staking token that represents your staked XDC. It allows you to earn staking rewards while maintaining liquidity and participating in DeFi activities."
+            question="What is an Anchor Staker?"
+            answer="An Anchor Staker is a user who operates their own private node. To become an Anchor Staker, you need to stake a minimum of 10 million XDC and will earn the highest APY. Anchor Stakers receive stXDC in a 1:1 ratio, but these tokens are not liquid. However, any rewards earned or unstaked XDC on Valid Protocol can be converted into LST tokens at any time."
           />
           <FAQItem
-            question="Where can I store my XDC securely?"
-            answer="You can store XDC in secure wallets like MetaMask or use institutional-grade custodians such as Fireblocks or Copper."
+            question="What is a Native Staker?"
+            answer="Native Stakers are community members who pool their XDC tokens with others to create a node. The funds are locked for a predetermined period to ensure the security of the staked tokens. Native Stakers receive stXDC in a 1:1 ratio, but these tokens are not liquid. Similar to Anchor Stakers, any rewards or unstaked XDC on Valid Protocol can be converted into LST tokens at any time. A minimum of 1,000 XDC is required to become a Native Staker, and they earn the second-highest APY."
           />
           <FAQItem
-            question="Which platforms support XDC for trading and DeFi?"
-            answer="XDC is supported on major exchanges like Binance, Coinbase, and Kraken, and integrated with popular DeFi protocols like Uniswap."
+            question="What is an LST Staker?"
+            answer="LST Stakers receive stXDC in a 1:1 ratio and are always liquid. Users can switch to Native Staker tokens at any time to lock their funds for a higher APY."
           />
           <FAQItem
-            question="How is XDC different from Ethereum or other blockchains?"
-            answer="XDC combines public and private blockchain features, offering high-speed transactions, lower fees, and enterprise-focused smart contract capabilities."
+            question="What does LST stand for?"
+            answer="LST stands for Liquid Staked Token. It represents a tokenized form of staked assets, allowing users to retain liquidity while participating in staking."
+          />
+          <FAQItem
+            question="What do the protocol fees cover on Valid Protocol?"
+            answer="The protocol fees on Valid Protocol help cover the costs of third-party node hosting services and the ongoing expenses associated with maintaining and operating the protocol."
+          />
+          <FAQItem
+            question="Does the Valid Protocol Team offer private customized staking solutions outside of the protocol?"
+            answer="Yes, the Valid Protocol Team does offer private customized staking solutions outside of the protocol. For more information or to inquire about these services, please reach out by filling out the form at this link, and a team member will get in touch with you."
           />
         </div>
       </div>
