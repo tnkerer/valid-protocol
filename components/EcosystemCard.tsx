@@ -16,6 +16,7 @@ const EcosystemCard = ({
   <div className="bg-white rounded-2xl p-8 hover:shadow-lg transition-all group">
     <div className="w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center mb-6 group-hover:border-blue-500 transition-colors">
       {logoUrl ? (
+        /* eslint-disable @next/next/no-img-element */
         <img src={logoUrl} alt={title} className="w-8 h-8" />
       ) : (
         <Icon className="w-8 h-8 text-gray-900 group-hover:text-blue-500 transition-colors" />

@@ -12,6 +12,7 @@ const logos = [
         <div className="scrolling-logos">
           {logos.concat(logos).map((logo, index) => (
             <div key={index} className="flex-shrink-0 mx-8">
+              {/* eslint-disable @next/next/no-img-element */}
               <img src={logo} alt="Partner Logo" className="h-8" />
             </div>
           ))}

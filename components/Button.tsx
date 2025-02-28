@@ -12,6 +12,7 @@ const Button = ({
   children: React.ReactNode;
   variant?: ButtonVariant;
   className?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 }) => {
   const baseStyles =

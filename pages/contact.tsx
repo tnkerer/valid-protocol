@@ -57,7 +57,7 @@ const Contact: NextPage = () => {
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
               <h2 className="text-2xl font-normal mb-6">Get in Touch</h2>
               <p className="text-gray-600 font-light mb-6">
-                Reach out, and we'll be happy to assist you
+                Reach out, and we&lsquo;ll be happy to assist you
               </p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Row 1: First Name, Last Name */}

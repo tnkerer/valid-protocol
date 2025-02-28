@@ -1,19 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import Logo from './Logo';
 
 const Footer = () => {
-  const router = useRouter();
-  const isOnContactPage = router.pathname === '/contact';
-
-  // For the “in-page” links, if we’re on the contact page, prefix them with “/”
-  // so they navigate back to the main page sections (/#staking, etc.).
-  // Otherwise, just “#staking” for normal in-page scrolling.
-  const stakingLink = isOnContactPage ? '/#staking' : '#staking';
-  const institutionalLink = isOnContactPage ? '/#institutional' : '#institutional';
-  const ecosystemLink = isOnContactPage ? '/#ecosystem' : '#ecosystem';
-  const faqLink = isOnContactPage ? '/#faq' : '#faq';
 
   return (
     <footer className="py-24 bg-transparent">
@@ -23,8 +12,7 @@ const Footer = () => {
           <div>
             <Logo />
             <p className="text-gray-500 mt-4 max-w-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat ut sem vitae maximus.
-              Fusce laoreet et elit sit amet pellentesque. Etiam purus turpis, molestie et iaculis nec, volutpat vitae velit.
+              Valid Protocol revolutionizes XDC staking with stXDC – a liquid staking token offering robust security, high liquidity, and flexible rewards. Our platform simplifies node hosting and protocol management, delivering competitive DeFi benefits for both private and community stakers.
             </p>
           </div>
 

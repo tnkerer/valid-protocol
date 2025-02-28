@@ -1,7 +1,6 @@
 import React from 'react';
 import { Wallet, Building2, Lock, Landmark, CreditCard, Shield, ArrowRight } from 'lucide-react';
 import EcosystemCard from './EcosystemCard';
-import Button from './Button';
 
 const EcosystemSection = () => {
   const platforms = [
