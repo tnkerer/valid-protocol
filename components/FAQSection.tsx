@@ -47,10 +47,10 @@ const FAQSection = () => {
       <div className="container mx-auto">
         {/* Header area */}
         <div className="max-w-4xl mx-auto px-6 text-left mb-12">
-          <p className="text-sm uppercase text-blue-500 tracking-wider mb-2">
+          <p className="text-sm uppercase text-gray-900 tracking-wider mb-2">
             FAQ
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-500">
             Common Questions
           </h2>
           <p className="text-gray-600">

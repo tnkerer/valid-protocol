@@ -10,21 +10,19 @@ const Hero = () => {
     >
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">
-          {/* Make the entire h1 an inline-flex container to ensure proper baseline alignment */}
-          <h1 className="flex items-baseline text-5xl md:text-5xl font-light mb-4 text-gray-900">
+          <h1 className="flex flex-col md:flex-row items-baseline text-5xl md:text-5xl font-light mb-4 text-gray-900">
             <span>Keep your</span>
-            {/* Use a left margin here, which will be consistent across the inline-flex items */}
-            <span className="ml-2 inline-flex items-baseline">
+            <span className="mt-1 md:mt-0 md:ml-2 inline-flex items-baseline">
               <RotatingText
                 texts={['Liquidity', 'Security', 'Ownership']}
                 mainClassName="px-2 sm:px-2 md:px-3 bg-transparent text-black overflow-hidden py-0.5 sm:py-1 md:py-2 rounded-lg"
                 staggerFrom="last"
-                initial={{ y: "100%" }}
+                initial={{ y: '100%' }}
                 animate={{ y: 0 }}
-                exit={{ y: "-120%" }}
+                exit={{ y: '-120%' }}
                 staggerDuration={0.025}
                 splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                transition={{ type: 'spring', damping: 30, stiffness: 400 }}
                 rotationInterval={3000}
               />
             </span>

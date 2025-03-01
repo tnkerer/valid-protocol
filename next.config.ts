@@ -5,4 +5,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 };
 
-export default nextConfig;
+export default { 
+  nextConfig,
+  env: {
+    SERVICE_ID: process.env.SERVICE_ID,
+    TEMPLATE_ID: process.env.TEMPLATE_ID,
+    PUBLIC_KEY: process.env.PUBLIC_KEY,
+  }
+ };

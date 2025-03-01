@@ -10,7 +10,9 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Left Column: Logo + Text */}
           <div>
-            <Logo />
+            <Link href="/">
+              <Logo />
+            </Link>
             <p className="text-gray-500 mt-4 max-w-md">
               Valid Protocol revolutionizes XDC staking with stXDC – a liquid staking token offering robust security, high liquidity, and flexible rewards. Our platform simplifies node hosting and protocol management, delivering competitive DeFi benefits for both private and community stakers.
             </p>
@@ -28,30 +30,28 @@ const Footer = () => {
               <Link href="/#ecosystem" className="text-gray-600 hover:text-blue-500 transition-colors">
                 Ecosystem
               </Link>
-              <Link href="/#faq" className="text-gray-600 hover:text-blue-500 transition-colors">
-                FAQ
-              </Link>
+
               <Link href="/contact" className="text-gray-600 hover:text-blue-500 transition-colors">
                 Contact Us
               </Link>
             </div>
             <div className="flex flex-col space-y-2">
-              <a
-                href="https://t.me/YourTelegramChannel"
+              <Link
+                href="https://t.me/+fQ5POYBdAS8zMWNh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-500 transition-colors"
               >
                 Telegram
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col space-y-2">
-              <a href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
-                Terms &amp; Conditions
-              </a>
-              <a href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
+              <Link href="/policy" className="text-gray-600 hover:text-blue-500 transition-colors">
                 Privacy Policy
-              </a>
+              </Link>
+              <Link href="/#faq" className="text-gray-600 hover:text-blue-500 transition-colors">
+                FAQ
+              </Link>
             </div>
           </div>
         </div>

@@ -7,6 +7,7 @@ import EcosystemSection from '../components/EcosystemSection';
 import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import LiquidSection from '@/components/LiquidSection';
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState('');
@@ -52,6 +53,7 @@ const Home = () => {
       <Navbar activeSection={activeSection} />
       <Hero />
       <ProcessSection />
+      <LiquidSection />
       <InstitutionalSection />
       <EcosystemSection />
       <FAQSection />

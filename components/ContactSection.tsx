@@ -27,9 +27,9 @@ const ContactSection = () => {
 
         {/* Actual content on top */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-8 text-white">
-          <h2 className="text-3xl md:text-4xl font-normal mb-4">
+          <h1 className="text-3xl md:text-4xl font-normal mb-4">
             Have Questions? Get in Touch!
-          </h2>
+          </h1>
           <p className="text-xl md:text-4x3 font-light mb-8">
             Our team is here to help you with any questions about stXDC and liquid staking.
           </p>

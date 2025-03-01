@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
+import Link from 'next/link';
+import emailjs from '@emailjs/browser';
 
 const Contact: NextPage = () => {
   const [formData, setFormData] = useState({
@@ -25,8 +27,38 @@ const Contact: NextPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Form submitted. We will get in touch soon!');
+    if (!process.env.SERVICE_ID || !process.env.TEMPLATE_ID || !process.env.PUBLIC_KEY) {
+      alert('One or more EmailJS environment variables are missing');
+      return;
+    }
+
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      phone: formData.phone,
+      email: formData.email,
+      company: formData.companyName,
+      message: formData.message
+    }
+
+    emailjs.send(
+      process.env.SERVICE_ID,
+      process.env.TEMPLATE_ID,
+      templateParams,
+      process.env.PUBLIC_KEY
+    )
+      .then((result) => {
+        console.log('Email sent successfully!', result.text);
+        alert('Email sent successfully!');
+        window.location.reload();
+      }, (error) => {
+        console.error('Error sending email:', error.text);
+        alert('Error sending email, please try again later. If the problem persists, please contact us at contact@xdcs.io.');
+      })
+      .catch((error) => {
+        console.error('Error in emailjs.send:', error);
+        alert('Error sending email, please try again later. If the problem persists, please contact us at contact@xdcs.io.');
+      });
   };
 
   return (
@@ -187,11 +219,9 @@ const Contact: NextPage = () => {
               <p className="text-sm text-gray-400 font-light mt-4 text-center">
                 By contacting us, you agree to our{' '}
                 <a href="#" className="text-blue-500 hover:underline">
-                  Terms and conditions
-                </a>{' '}
-                and{' '}
-                <a href="#" className="text-blue-500 hover:underline">
+                  <Link href="policy">
                   Privacy Policy
+                  </Link>
                 </a>
               </p>
             </div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:export>
+      <bx:file format="svg" path="Asset 1.svg"/>
+      <bx:file format="png" path="Asset 1.png"/>
+    </bx:export>
+    <path id="path-0" d="M 6.524389598149924 15.56181156636626 L 41.943436361401716 -16.2755338388039" style="fill: none;"/>
+  </defs>
+  <style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:url(#SVGID_2_);}
+	.st3{fill:#FEFEFE;}
+</style>
+  <path class="st0" d="M 37 26.3 L 37 13.7 C 37 11.6 35.9 9.6 34 8.5 L 23 2.2 C 21.1 1.1 18.9 1.1 17 2.2 L 6 8.5 C 4.1 9.6 3 11.6 3 13.7 L 3 26.3 C 3 28.4 4.1 30.4 6 31.5 L 17 37.8 C 18.9 38.9 21.1 38.9 23 37.8 L 34 31.5 C 35.8 30.4 37 28.5 37 26.3 Z" style="paint-order: fill; fill: rgb(53, 7, 124);"/>
+  <g style="" transform="matrix(1.12119, 0, 0, 1.12119, -2.338661, 0.021486)">
+    <text style="fill: rgb(255, 255, 255); font-family: &quot;Microsoft Himalaya&quot;; font-size: 21.2px; line-height: 24.2599px; white-space: pre;" x="10.125" y="21.945">stX</text>
+  </g>
+  <title>Asset 1</title>
+  <title>Asset 1</title>
+</svg>

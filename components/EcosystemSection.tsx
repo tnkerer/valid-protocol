@@ -1,59 +1,76 @@
 import React from 'react';
-import { Wallet, Building2, Lock, Landmark, CreditCard, Shield, ArrowRight } from 'lucide-react';
 import EcosystemCard from './EcosystemCard';
 
 const EcosystemSection = () => {
   const platforms = [
     {
-      title: "MetaMask",
-      description: "A crypto wallet & gateway to blockchain apps.",
-      type: "Wallet",
-      icon: Wallet,
-      logoUrl: "https://raw.githubusercontent.com/MetaMask/brand-resources/master/SVG/metamask-fox.svg"
+      title: "XDC Network",
+      description: "The XDC Network sets a benchmark for digitizing trade finance by enabling the tokenization of diverse trade finance instruments and assets.",
+      type: "Network",
+      icon: "xdc",
     },
     {
-      title: "Binance",
-      description: "A crypto exchange & platform for digital asset trading.",
-      type: "Exchange",
-      icon: Building2,
-    },
-    {
-      title: "Fireblocks",
-      description: "Enterprise-grade security for digital assets.",
-      type: "Security",
-      icon: Lock,
-    },
-    {
-      title: "Kraken",
-      description: "Professional trading platform and custody solutions.",
-      type: "Exchange",
-      icon: Landmark,
-    },
-    {
-      title: "Coinbase",
-      description: "Leading cryptocurrency exchange platform.",
-      type: "Exchange",
-      icon: CreditCard,
-    },
-    {
-      title: "Copper",
-      description: "Institutional digital asset custody and trading.",
-      type: "Custody",
-      icon: Shield,
-    },
-    {
-      title: "Uniswap",
-      description: "Decentralized trading protocol for tokens.",
+      title: "Prime Numbers",
+      description: "Prime Numbers Labs is a revolutionary DeFi ecosystem that seamlessly integrates lending, borrowing, staking, and NFT markets into an all-in-one platform.",
       type: "DeFi",
-      icon: ArrowRight,
+      icon: "prime",
+    },
+    {
+      title: "YodaPlus",
+      description: "Yodaplus delivers AI-driven, secure, and scalable solutions for Finance, Retail, Supply Chain, and Blockchain, empowering businesses for the future.",
+      type: "Development",
+      icon: "yoda",
+    },
+    {
+      title: "DefiMoon",
+      description: "Transformative Web3 development for startups and enterprises. A Vanguard in DeFi Development.",
+      type: "Development",
+      icon: "moon",
+    },
+    {
+      title: "Node Forge",
+      description: "Node Forge is a multi-cloud blockchain infrastructure and masternode hosting platform. Making deploying and scaling node-based systems effortless.",
+      type: "Infrastructure",
+      icon: "forge",
+    },
+    {
+      title: "X Swap Protocol",
+      description: "XSwap is a decentralized exchange for XRC20 tokens and is built on the XDC Network. It allows all customers to Swap & Earn inside secured pools.",
+      type: "DeFi",
+      icon: "xswap",
+    },
+    {
+      title: "XDCS",
+      description: "Focused on cutting-edge technology, X Digital Capital Solutions uses the best technologies and practices to create innovative blockchain solutions.",
+      type: "Infrastructure",
+      icon: "xdcs",
+    },
+    {
+      title: "Data Foundry",
+      description: "Expert full-stack development, smart contract solutions, CI/CD automation, DevOps, and agile training. Delivering scalable, secure, and efficient software solutions from start to finish.",
+      type: "Development",
+      icon: "data",
     },
   ];
 
   return (
-    <section id="ecosystem" className="py-24 bg-transparent">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-normal mb-16 text-center">stXDC Ecosystem</h2>
-        <div className="grid md:grid-cols-4 gap-8">
+    <section id="ecosystem" className="relative py-24 bg-transparent">
+
+      <div className="container max-w-[1200px] mx-auto px-6">
+
+        <div className="max-w-[1200px] mx-auto px-6 text-left mb-12">
+
+          <p className="text-sm uppercase text-gray-900 tracking-wider mb-2">
+            Ecosystem Partners
+          </p>
+          <h2 className="text-6xl md:text-6xl mb-4 text-blue-500">
+            stXDC
+          </h2>
+          <p className="max-w-[600px] text-gray-600">
+            Network of interconnected partners that work together to support the creation, management, and use of digital currencies.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8">
           {platforms.map((platform, i) => (
             <EcosystemCard
               key={i}
@@ -61,21 +78,12 @@ const EcosystemSection = () => {
               description={platform.description}
               type={platform.type}
               icon={platform.icon}
-              logoUrl={platform.logoUrl}
             />
           ))}
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white flex flex-col justify-between hover:shadow-lg transition-all group">
-            <div>
-              <h3 className="text-3xl font-normal mb-2">102+</h3>
-              <p className="text-blue-100 font-light">More Apps</p>
-            </div>
-            <button className="mt-8 bg-white/10 rounded-full py-2 px-4 text-sm backdrop-blur-sm group-hover:bg-white/20 transition-colors font-light">
-              Explore Ecosystem
-            </button>
-          </div>
         </div>
       </div>
     </section>
+
   );
 };
 

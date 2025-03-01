@@ -41,6 +41,28 @@
   }
 }
 
+@layer base {
+  h1 {
+    @apply mb-4 font-bold;
+  }
+  h2 {
+    @apply mb-4 font-bold text-[#0052FF];
+  }
+  p {
+    @apply mb-4;
+  }
+  li {
+    @apply mb-2;
+  }
+  ul {
+    @apply list-disc;
+  }
+  /* Optionally, add indentation for list items */
+  ul li {
+    @apply ml-4;
+  }
+}
+
 
 body {
   font-family: 'Manrope', sans-serif;
