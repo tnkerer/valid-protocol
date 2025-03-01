@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '380px', // Custom breakpoint for small screens
+      },
       colors: {
         blue: {
           50: '#e3f2ff', // adjust these if needed

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="staking"
-      className="relative w-full min-h-[80vh] md:min-h-[80vh] flex items-center overflow-hidden bg-transparent"
+      className="relative w-full min-h-[80vh] md:min-h-[80vh] flex items-center overflow-hidden bg-transparent min-w-[470px]"
     >
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">
@@ -35,7 +35,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-gray-600 font-light mb-8">
             Liquid XDC staking with no lock-ups
           </p>
-          <Button>Stake XDC</Button>
+          <Button className="hidden xs:block">Stake XDC</Button>
         </div>
       </div>
     </section>
