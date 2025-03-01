@@ -123,7 +123,7 @@ const CircleSvg = () => (
 const ProcessSection = () => {
   return (
     <section className="py-24 bg-transparent">
-      <div className="container mx-auto px-6 pt-24">
+      <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start justify-between gap-12">
           {steps.map((step, index) => {
             const isLast = index === steps.length - 1;
