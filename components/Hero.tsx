@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="staking"
-      className="relative w-full min-h-[40vh] flex items-center overflow-hidden bg-transparent"
+      className="relative w-full min-h-[80vh] md:min-h-[80vh] flex items-center overflow-hidden bg-transparent"
     >
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">

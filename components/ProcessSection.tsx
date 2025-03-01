@@ -122,7 +122,8 @@ const CircleSvg = () => (
 
 const ProcessSection = () => {
   return (
-    <section className="py-24 bg-transparent">
+    <section className="py-24 bg-transparent -mt-52">
+
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start justify-between gap-12">
           {steps.map((step, index) => {

@@ -54,7 +54,7 @@ const EcosystemSection = () => {
   ];
 
   return (
-    <section id="ecosystem" className="relative py-24 bg-transparent">
+    <section id="ecosystem" className="relative py-24 bg-transparent min-w-[470px] mt-32">
 
       <div className="container max-w-[1200px] mx-auto px-6">
 

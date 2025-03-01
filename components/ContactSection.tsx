@@ -6,7 +6,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="py-24 flex justify-center items-center overflow-hidden relative"
+      className="py-24 flex justify-center items-center overflow-hidden relative min-w-[470px]"
     >
       <div className="relative w-full max-w-[972px] h-[305px] rounded-2xl overflow-hidden shadow-lg shadow-blue-100/50 contact-container">
         

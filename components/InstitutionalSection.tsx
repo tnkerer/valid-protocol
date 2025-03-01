@@ -25,7 +25,7 @@ const InstitutionalSection = () => {
   const [activeStaking, setActiveStaking] = useState("liquid");
 
   return (
-    <section id="institutional" className="py-24 bg-transparent">
+    <section id="institutional" className="py-24 bg-transparent min-w-[470px]">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="text-2xl text-gray-600 mb-2">Our Services</p>

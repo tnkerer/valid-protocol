@@ -23,7 +23,7 @@ const LiquidSection: React.FC = () => {
   return (
     <section
       id="liquid"
-      className="relative py-24 overflow-hidden bg-transparent"
+      className="relative py-24 overflow-hidden bg-transparent min-w-[470px]" 
     >
       {/* Background SVG wireframe (abstract lines) */}
 

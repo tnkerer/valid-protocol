@@ -43,7 +43,7 @@ const FAQItem = ({ question, answer }: FAQItemProps) => {
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="py-24 bg-transparent">
+    <section id="faq" className="py-24 bg-transparent min-w-[470px]">
       <div className="container mx-auto">
         {/* Header area */}
         <div className="max-w-4xl mx-auto px-6 text-left mb-12">
